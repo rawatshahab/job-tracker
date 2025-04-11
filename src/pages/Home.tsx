@@ -85,17 +85,17 @@ export default function Home() {
                 <option value="offer">Offer</option>
                 <option value="rejected">Rejected</option>
             </select></div>
-           <div className="job-list">
-           {filteredData.map(job => (
-                <JobDetails
-                    key={job._id}
-                    job={job}
-                    onDelete={handleDelete}
-                    onStatusChange={handleStatusChange}
-                />
-            ))}
-           </div>
-            
+            <div className="job-list">
+                {filteredData.map(job => (
+                    <JobDetails
+                        key={job._id}
+                        job={job}
+                        onDelete={handleDelete}
+                        onStatusChange={handleStatusChange}
+                    />
+                ))}
+            </div>
+
         </main>
     );
 }
