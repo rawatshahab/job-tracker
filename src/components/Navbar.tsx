@@ -16,11 +16,11 @@ const Navbar: React.FC = () => {
     );
 };
 
-const styles = {
+const styles: { [key: string]: React.CSSProperties } = {
     navbar: {
         backgroundColor: '#333',
         padding: '10px 20px',
-        position: 'fixed', // Stick to the top
+        position: 'fixed',
         top: 0,
         left: 0,
         width: '100%',
@@ -31,7 +31,7 @@ const styles = {
         display: 'flex',
         margin: 0,
         padding: 0,
-        justifyContent: 'flex-start', // Align items to the left
+        justifyContent: 'flex-start',
     },
     navItem: {
         marginRight: '20px',

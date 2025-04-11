@@ -5,7 +5,7 @@ import './App.css'
 import Home from './pages/Home'
 import Addjob from './pages/Addjob'
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <div>

@@ -42,7 +42,7 @@ export default function Home() {
 
     const fetchJobs = async () => {
         try {
-            const res = await axios.get('http://localhost:3000/api/getjobs');
+            const res = await axios.get('https://job-backend-1y89.onrender.com/api/getjobs');
             setData(res.data);
         } catch (err) {
             console.error('Error fetching jobs', err);
@@ -54,7 +54,7 @@ export default function Home() {
         if (!confirmDelete) return;
 
         try {
-            await axios.delete(`http://localhost:3000/api/deletejob/${id}`);
+            await axios.delete(`https://job-backend-1y89.onrender.com/api/deletejob/${id}`);
             fetchJobs();
         } catch (err) {
             console.error('Error deleting job', err);
@@ -63,7 +63,7 @@ export default function Home() {
 
     const handleStatusChange = async (id: string, newStatus: string) => {
         try {
-            await axios.put(`http://localhost:3000/api/updatejob/${id}`, { status: newStatus });
+            await axios.put(`https://job-backend-1y89.onrender.com/api/updatejob/${id}`, { status: newStatus });
             fetchJobs();
         } catch (err) {
             console.error('Error updating status', err);

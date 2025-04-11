@@ -14,7 +14,7 @@ export default function Addjob() {
     });
     const handleAddJob = async () => {
         try {
-            await axios.post('http://localhost:3000/api/addjob', newJob);
+            await axios.post('https://job-backend-1y89.onrender.com/api/addjob', newJob);
             setNewJob({ role: '', company: '', link: '', date: new Date().toISOString().split('T')[0], status: 'applied' });
         } catch (err) {
             console.error('Error adding job', err);
