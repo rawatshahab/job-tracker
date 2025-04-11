@@ -65,7 +65,17 @@ div.job-card button:hover {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-flex-wrap: wrap;
-justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 
+}
+@media (max-width: 768px) {
+  .job-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.job-card {
+    width: 90%;
+  }
 }
