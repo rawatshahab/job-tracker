@@ -1,10 +1,9 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import "./addjob.css";
 
 export default function Addjob() {
-    const [data, setData] = useState([]);
-    const [filter, setFilter] = useState('');
+
     const [newJob, setNewJob] = useState({
         role: '',
         company: '',
