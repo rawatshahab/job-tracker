@@ -23,29 +23,31 @@ A simple and responsive job application tracking system built with React and Nod
 ### Backend(https://github.com/rawatshahab/job-backend)
 
 1. Navigate to the backend directory:
-   ```bash
+
    cd job-backend
-   ```
+
 2. Install dependencies:
-   ```bash
+
    npm install
-   ```
-3. Add your MongoDB URI to `.env` or directly in `index.js`.
+
+3. Add your MongoDB URL to `.env` or directly in `index.js`.
 4. Start the server:
-   ```bash
+
    node index.js
-   ```
+
 
 ### Frontend
 1. Navigate to the frontend directory:
-   ```bash
+
    cd job-tracker
-   ```
+
 2. Install dependencies:
-   ```bash
+
    npm install
-   ```
+
 3. Start the development server:
-   ```bash
+
    npm run dev
-   ```
+
+
+Enjoy
